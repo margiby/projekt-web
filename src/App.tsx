@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { IntlProvider } from 'react-intl';
+import { Routes, Route, Link } from 'react-router-dom';
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import { LocaleContextProvider, useLocale } from './hooks/Context';
 import { DE } from './hooks/Context/localeConstants'; // default
+import { HomePage, UploadPage, ApiPage } from './pages';
 
 // Inner component to handle language changes
 const AppLanguageView: React.FC = () => {
